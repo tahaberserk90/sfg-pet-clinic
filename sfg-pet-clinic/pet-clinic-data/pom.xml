@@ -9,6 +9,9 @@
 	</parent>
 	<groupId>com.springframework</groupId>
 	<artifactId>pet-clinic-data</artifactId>
+	<properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -42,7 +45,7 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -59,5 +62,5 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 </project>
