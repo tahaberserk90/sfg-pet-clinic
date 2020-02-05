@@ -1,5 +1,8 @@
 package com.springframework.sfgpetclinic.model;
 
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class Person extends BaseEntity {
 	
 	private static final long serialVersionUID = 2609819976981306460L;
