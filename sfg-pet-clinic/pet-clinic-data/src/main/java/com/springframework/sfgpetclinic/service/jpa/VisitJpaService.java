@@ -3,10 +3,15 @@ package com.springframework.sfgpetclinic.service.jpa;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
 import com.springframework.sfgpetclinic.model.Visit;
 import com.springframework.sfgpetclinic.repositories.VisitRepository;
 import com.springframework.sfgpetclinic.service.VisitService;
 
+@Service
+@Profile("jpa")
 public class VisitJpaService implements VisitService {
 
     private final VisitRepository visitRepository;
